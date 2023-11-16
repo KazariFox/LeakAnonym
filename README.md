@@ -1,2 +1,2 @@
 # DjangoForum
-Personal private forum with Django &amp; Angular
+Description coming soon.. just whait
