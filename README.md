@@ -1,2 +1,3 @@
 # DjangoForum
-Description coming soon.. just whait
+
+просто форум на джанго, бимбимбамбам сука блядь
