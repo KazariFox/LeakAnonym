@@ -4,8 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { LeanAuthModule } from "@lean/lean-auth";
+import { LeanAuthModule } from '@lean/lean-auth';
+import { AuthInterceptor } from '@lean/lean-auth';
+
 import { environment } from '../environments/environment.prod';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { environment } from '../environments/environment.prod';
       renewApi: environment.apiUrl + 'renew'
     })
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
