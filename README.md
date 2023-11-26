@@ -16,7 +16,7 @@ ___
 ___
 ## Лицензия
 
-Наш проект распространяется под лицензией Apache License 2.0, подробнее [здесь](https://github.com/nsvk13/DjangoForum/blob/main/LICENSE)
+Наш проект распространяется под лицензией Apache License 2.0, подробнее [здесь](https://github.com/nsvk13/DjangoForum/blob/main/LICENSE).
 
 ___
 ## Авторы проекта
